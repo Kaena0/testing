@@ -14,3 +14,11 @@ class Figure:
     @property
     def get_figure_length(self):
         return self.length  # тут ми вже виправляємо попередню помилку
+
+@property
+def get_angles(self):
+    if self.type in ["квадрат", "прямокутник"]:
+        return 4
+    if self.type == "трикутник":
+        return 3
+
